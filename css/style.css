@@ -1,3 +1,44 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* Header */
+
+.header {
+}
+
+.header-navigation {
+}
+
+.header-logo {
+}
+
+.header-list {
+}
+
+.header-item {
+}
+
+.header-link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33%;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.header-phone {
+}
+
+.header-btn {
+}
+/* Header */
+
