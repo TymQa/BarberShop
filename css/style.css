@@ -9,7 +9,19 @@ body {
 }
 
 .container {
-    width: 1170px;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+img {
+    display: block;
 }
 
 h1,
@@ -55,7 +67,8 @@ address {
 /* Header */
 
 .header {
-    
+    background-color: gray;
+    padding-top: 32px;
 }
 
 .header-navigation {
@@ -99,6 +112,7 @@ address {
 /* Section1 */
 
 .hero {
+    background-color: #303030;
 }
 
 .hero-list {
@@ -125,6 +139,8 @@ address {
     line-height: 15px;
     text-transform: uppercase;
     color: rgba(157, 164, 189, 0.6);
+
+    margin-bottom: 20px;
 }
 
 .hero-title {
@@ -133,6 +149,8 @@ address {
     line-height: 1.18;
     letter-spacing: 0.05em;
     color: #FFFFFF;
+
+    margin-bottom: 20px;
 }
 
 .hero-bottom-text {
@@ -147,7 +165,7 @@ address {
 
 /* Section2 */
 .about {
-    background-color: gray;
+    background-color: #303030;
 }
 
 .about-list {
