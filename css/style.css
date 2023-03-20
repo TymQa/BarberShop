@@ -1,13 +1,36 @@
+:root {
+    
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
+<<<<<<< Updated upstream
+=======
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+} 
+
+ul, li {
+    margin: 0;
+    padding-left: 0;
+}
+
+>>>>>>> Stashed changes
 .list {
     list-style: none;
 }
 
 .link {
     text-decoration: none;
+<<<<<<< Updated upstream
 }
 
 .btn {
@@ -293,3 +316,6 @@ body {
 }
 
 /* Section5 */
+=======
+}
+>>>>>>> Stashed changes
