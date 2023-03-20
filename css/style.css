@@ -2,12 +2,16 @@
     
 }
 
+/* general */
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
-<<<<<<< Updated upstream
-=======
+.container {
+    width: 1170px;
+}
+
 h1,
 h2,
 h3,
@@ -23,14 +27,16 @@ ul, li {
     padding-left: 0;
 }
 
->>>>>>> Stashed changes
+address {
+    font-style: none;
+}
+
 .list {
     list-style: none;
 }
 
 .link {
     text-decoration: none;
-<<<<<<< Updated upstream
 }
 
 .btn {
@@ -44,20 +50,12 @@ ul, li {
     cursor: pointer;
 }
 
-.title {
-
-}
-
-.top-text {
-
-}
-
-
+/* general */
 
 /* Header */
 
 .header {
-    background-color: gray;
+    
 }
 
 .header-navigation {
@@ -101,13 +99,9 @@ ul, li {
 /* Section1 */
 
 .hero {
-    background-color: gray;
 }
 
 .hero-list {
-}
-
-.list {
 }
 
 .hero-item {
@@ -123,9 +117,6 @@ ul, li {
 
 .hero-link:is(:hover, :focus) {
     color: #FF6C00;
-}
-
-.link {
 }
 
 .hero-top-text {
@@ -316,6 +307,3 @@ ul, li {
 }
 
 /* Section5 */
-=======
-}
->>>>>>> Stashed changes
