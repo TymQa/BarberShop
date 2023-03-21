@@ -1,11 +1,18 @@
 :root {
-    
+    --color-orange-text: #FF6C00;
+    --color-subtitle: #303030;
+    --color-white: #FFFFFF;
+    --color-contacts: #9DA4BD;
 }
 
 /* general */
 
 body {
     font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    font-style: normal;
 }
 
 .container {
@@ -307,9 +314,19 @@ address {
 }
 
 .barbers-top-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--color-subtitle);
 }
 
 .barbers-title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: var(--color-subtitle);
 }
 
 .barbers-list {
@@ -319,9 +336,146 @@ address {
 }
 
 .barbers-subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.38;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--color-subtitle);
 }
 
 .barbers-item-text {
+    font-size: 14px;
+    line-height: 1.35;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--color-orange-text);
 }
 
 /* Section5 */
+
+/* Section6 */
+
+.works {
+}
+
+.works-top-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--color-subtitle);
+}
+
+.works-list {
+}
+
+.works-item {
+}
+
+/* Section6 */
+
+/* Section7 */
+
+.online-booking {
+    background-color: gray;
+}
+
+.online-booking-title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: var(--color-white);
+}
+
+/* Section7 */
+
+/* Section8 */
+
+.contacts {
+    background-color: #303030;
+}
+
+.contacts-title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: var(--color-white);
+}
+
+.contacts-list {
+}
+
+.contacts-item {
+}
+
+.contacts-item-address {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.66;
+    letter-spacing: 0.02em;
+    color: var(--color-contacts);
+}
+
+.contacts-item-contact {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.66;
+    letter-spacing: 0.02em;
+    color: var(--color-contacts);
+}
+
+.contacts-title-bottom {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+
+.contacts-bottom-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.66;
+    letter-spacing: 0.02em;
+    color: var(--color-contacts);
+}
+
+
+/* Section8 */
+
+/* footer */
+
+.footer {
+    background-color: gray;
+}
+
+.footer-copyright {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: var(--color-contacts);
+}
+
+.footer-list {
+}
+
+.footer-item {
+}
+
+.footer-social {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: var(--color-subtitle);
+}
+
+/* footer */
