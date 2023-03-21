@@ -456,6 +456,7 @@ address {
     background-color: gray;
 }
 
+
 .footer-copyright {
     font-weight: 600;
     font-size: 11px;
@@ -465,6 +466,8 @@ address {
 }
 
 .footer-list {
+    padding-top: 56px;
+    padding-bottom: 56px;
 }
 
 .footer-item {
