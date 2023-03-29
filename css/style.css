@@ -5,6 +5,10 @@
     --color-contacts: #9DA4BD;
     --color-gray: #555555;
     --color-price: #9DA4BD;
+    --bg-gradient: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
+    --color-bg-barber: #F7F7F7;
+    --color-icon: #303030;
+    --prices-bg: #111319;
 }
 
 /* general */
@@ -146,9 +150,13 @@ address {
 }
 
 .hero-wrap {
-    background-color: wheat;
     flex-grow: 1;
     padding: 272px 100px 208px 100px;
+
+    background-image: var(--bg-gradient), url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-list {
@@ -178,6 +186,16 @@ address {
     color: rgba(157, 164, 189, 0.6);
 
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-top-text::before {
+    height: 1px;
+    width: 60px;
+    content: '';
+    background-color: currentColor;
 }
 
 .hero-title {
@@ -266,7 +284,13 @@ address {
 /*  Section3 */
 
 .prices {
-    background-color: gray;
+    max-width: 1600px;
+    margin: 0 auto;
+    background: #111319;
+    background-image: url(../images/prices-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .prices-top-text {
@@ -293,10 +317,31 @@ address {
     padding: 30px 20px;
 }
 
+.prices-list:first-child {
+    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    border: none;
+}
+
+.prices-list:last-child {
+    background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+    border: none;
+}
+
 .prices-item {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    align-items: baseline;
+    gap: 12px;
+}
+
+.prices-item::before {
+    content: '';
+    height: 1px;
+    width: 100px;
+    background-color: rgba(157, 164, 189, 0.12);
+    flex-grow: 1;
+    order: 1;
 }
 
 .prices-item:last-child {
@@ -308,6 +353,10 @@ address {
     line-height: 1.66;
     letter-spacing: 0.02em;
     color: var(--color-price);
+}
+
+.prices-item-text:last-child {
+    order: 2;
 }
 
 .prices-wrap {
@@ -330,7 +379,32 @@ address {
     background-color: wheat;
 }
 
+.benefits-container {
+    display: flex;
+    gap: 130px;
+    padding-left: 85px;
+    padding-right: 115px;
+}
+
+.benefits-item {
+    width: 170px;
+    height: 133px;
+    padding: 20px 24px;
+}
+
+.benefits-item:nth-child(odd) {
+    margin-right: 30px;
+}
+
+.benefits-item:nth-child(even) {
+    margin-top: 30px;
+}
+
 .benefits-list {
+    display: flex;
+    width: 370px;
+    flex-wrap: wrap;
+    flex-shrink: 0;
 }
 
 .benefits-item .count {
@@ -340,6 +414,8 @@ address {
     text-align: center;
     letter-spacing: 0.05em;
     color: #303030;
+    display: block;
+    margin-bottom: 6px;
 }
 
 .benefits-item .count + p {
@@ -359,6 +435,7 @@ address {
     line-height: 1.36;
     text-transform: uppercase;
     color: #303030;
+    margin-bottom: 20px;
 }
 
 .benefits-title {
@@ -367,6 +444,7 @@ address {
     line-height: 1.17;
     letter-spacing: 0.05em;
     color: #303030;
+    margin-bottom: 20px;
 }
 
 .benefits-botton-text {
@@ -381,6 +459,7 @@ address {
 /* Section5 */
 
 .barbers {
+    background-color: var(--color-bg-barber);
 }
 
 .barbers-top-text {
@@ -409,7 +488,11 @@ address {
 }
 
 .barbers-item {
-    width: calc((100% -60) / 3);
+    width: calc((100% -60) / 3); 
+}
+
+.barbers-item-wrap {
+    padding-top: 30px;
 }
 
 .barbers-subtitle {
@@ -419,6 +502,8 @@ address {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--color-subtitle);
+
+    margin-bottom: 8px;
 }
 
 .barbers-item-text {
@@ -427,6 +512,38 @@ address {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--color-orange-text);
+
+    margin-bottom: 30px;
+}
+
+.barbers-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.barbers-soc-item {
+    width: 44px;
+    height: 44px;
+}
+
+.barbers-soc-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+}
+
+.barbers-soc-icon {
+    fill: var(--color-icon);
+}
+
+.barbers-soc-link:is(:hover, :focus) {
+    
 }
 
 /* Section5 */
